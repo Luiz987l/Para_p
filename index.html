@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Frases</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Gerador de Frases</h1>
+    <p>Clique no botão para receber uma mensagem!</p>
+
+    <p id="contadorMensagem">Mensagens restantes: 16</p>
+    
+    <!-- Escolha entre frase ou poema -->
+    <label for="tipoConteudo">Escolha o tipo:</label>
+    <select id="tipoConteudo">
+        <option value="frase">Frase</option>
+        <option value="poema">Poema</option>
+    </select>
+
+    <!-- Escolha o estilo da mensagem -->
+    <label for="categoria">Escolha a categoria:</label>
+    <select id="categoria">
+        <option value="romantico">Romântico</option>
+        <option value="motivacional">Motivacional</option>
+        <option value="amigos">Amizade</option>
+        <option value="reflexao">Reflexão</option>
+    </select>
+
+    <br><br>
+    <button onclick="gerarFrase()">Gerar Mensagem</button>
+    
+    <p id="frase"></p>
+
+    <script src="script.js"></script>
+
+    <p>Criado por L.F</p>
+</body>
+</html>
